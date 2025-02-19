@@ -1,55 +1,163 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Anime Characters Stories</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        input {
+            padding: 10px;
+            width: 200px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .result {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .stories {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        .story-btn {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            font-size: 18px;
+            width: 150px;
+            text-decoration: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+        }
+        .coming-soon {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Manush Moronshil!</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">আপনি কি একজন মানুষ?</a></li>
-                <li><a href="#projects">কত % মানুষ?</a></li>
-                <li><a href="#contact">আপনি কি শুটকি খান?</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="about">
-        <h2>আপনি মানুষ কিভাবে হবেন?</h2>
-        <p>মানুষ কে মানুষ হওয়ার জন্য মানুষ হতে হবে। তার জন্য আপনাকে Halal হতে হবে, লম্বা হতে হবে, সেটা Lumbu chacha শিখাবে। মানুষ হওয়া জন্য নিজে কেই নিজ ভাবে শিখতে হবে। আপনি 
-খেয়াল রাখবেন যাতে আপনি Boka chowdury না হয়ে যান। মনে রাখবা Manush moronshil।</p>
-    </section>
+    <h1>Anime Characters Stories</h1>
 
-    <section id="projects">
-        <h2>RA</h2>
-        <div class="project">
-            <h3>শুটকি খা </h3>
-            <p>মানুষ হতে হলে অবশ্যই শুটকি খেতে হবে</p>
-        </div>
-    </section>
+    <input type="text" id="searchBox" placeholder="Search...">
+    <button onclick="searchCharacter()">Search</button>
 
-    <section id="contact">
-        <h2>তোর খবর দে</h2>
-        <form id="contact-form">
-            <label for="name">তোর নাম ক:</label>
-            <input type="text" id="name" required>
-            
-            <label for="email">শুটকি খোর email দে:</label>
-            <input type="email" id="email" required>
-            
-            <label for="message">Shehub:</label>
-            <textarea id="message" required></textarea>
-            
-            <button type="submit">পাঠাইলে কুবামু, তবুও পাঠা</button>
-        </form>
-    </section>
+    <div id="searchResult" class="result"></div>
 
+    <div class="stories">Stories:</div>
+
+    <a href="itachi.html" class="story-btn">Itachi</a>
+    <a href="obito.html" class="story-btn">Obito</a>
+
+    <div class="coming-soon">Coming Soon</div>
+
+    <script>
+        function searchCharacter() {
+            let query = document.getElementById("searchBox").value.toLowerCase();
+            let resultBox = document.getElementById("searchResult");
+
+            if (query === "itachi" || query === "obito") {
+                resultBox.innerHTML = query.charAt(0).toUpperCase() + query.slice(1);
+            } else {
+                resultBox.innerHTML = "Not Available";
+            }
+        }
+    </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itachi's Story</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        h1 {
+            font-size: 28px;
+        }
+        p {
+            font-size: 18px;
+            width: 60%;
+            margin: auto;
+            line-height: 1.6;
+        }
+        .highlight {
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Itachi's Story</h1>
+
+    <p>অনেকে মনে করে <span class="highlight">Sacrifice</span> শব্দ টা শুধু Itachi এর জন্য তৈরি। কারণ সে নিজের সব কিছু <span class="highlight">Sacrifice</span> করে দিসে।  
+    সেটা নিজের village এর একজন loyal shinobi ছিলো। নিজের village কে বাঁচানোর জন্য সে নিজের clan কে শেষ করে দিসে।  
+    শুধু তার ভাই কে বাদে।</p>
+
+    <p class="highlight">Thank You</p>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obito's Story</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        h1 {
+            font-size: 28px;
+        }
+        p {
+            font-size: 18px;
+            width: 60%;
+            margin: auto;
+            line-height: 1.6;
+        }
+        .highlight {
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Obito's Story</h1>
+
+    <p>সে নিজের ভালোবাসা কে হারিয়ে ফেলেছে। এ জন্যই.....</p>
+
+    <p class="highlight">Thank You</p>
+
+</body>
+</html>
     <footer>
-        <p>&copy; ২০২৫ | Manush moronshil, WEB BY NAFIZ</p>
+        <p>&copy; 2025 | Manush moronshil, WEB BY NAFIZ</p>
     </footer>
 
     <script src="script.js"></script>

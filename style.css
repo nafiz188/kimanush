@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>আমার ওয়েবসাইট</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">আমার সম্পর্কে</a></li>
+                <li><a href="#projects">প্রোজেক্ট</a></li>
+                <li><a href="#contact">যোগাযোগ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>আমার সম্পর্কে</h2>
+        <p>আমি একজন ওয়েব ডেভেলপার এবং প্রযুক্তি অনুরাগী। আমি নতুন নতুন জিনিস শিখতে ভালোবাসি।</p>
+    </section>
+
+    <section id="projects">
+        <h2>আমার প্রোজেক্ট</h2>
+        <div class="project">
+            <h3>প্রোজেক্ট ১</h3>
+            <p>এটি আমার প্রথম প্রোজেক্ট যেখানে আমি HTML, CSS এবং JavaScript ব্যবহার করেছি।</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>যোগাযোগ</h2>
+        <form id="contact-form">
+            <label for="name">নাম:</label>
+            <input type="text" id="name" required>
+            
+            <label for="email">ইমেইল:</label>
+            <input type="email" id="email" required>
+            
+            <label for="message">বার্তা:</label>
+            <textarea id="message" required></textarea>
+            
+            <button type="submit">পাঠান</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; ২০২৫ | আমার ওয়েবসাইট</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
